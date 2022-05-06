@@ -65,19 +65,15 @@ RUN arch=$(uname -m) && \
     'cartopy'\
     'plotly'\
     'geopandas'\
-    'seaborn'\
-    'cufflinks'\
+    'cufflinks-py'\
     'yaml'\
     'folium'\
-    'mpl_toolkits'\
-    'otter-grader'\
     'geopy'\
     'requests'\
-    'IPython'\
+    'ipython'\
     'numpy'\
     'cycler'\
     'graphviz'\
-    'python-congress'\
     'tqdm'\
     'flask'\
     'xarray'\
@@ -99,6 +95,8 @@ ENV XDG_CACHE_HOME="/home/${NB_USER}/.cache/"
 
 RUN MPLBACKEND=Agg python -c "import matplotlib.pyplot" && \
     fix-permissions "/home/${NB_USER}"
+   
+RUN pip install python-congress otter-grader
 
 USER ${NB_UID}
 
