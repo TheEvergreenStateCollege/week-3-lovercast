@@ -1,2 +1,1 @@
-image:
-  from: jupyter/scipy-notebook
+image: jupyter/scipy-notebook:latest
