@@ -61,26 +61,26 @@ RUN arch=$(uname -m) && \
     'sympy' \
     'widgetsnbextension'\
     'contextily'\
-		'joblib'\
-		'cartopy'\
-		'plotly'\
-		'geopandas'\
-		'seaborn'\
-		'cufflinks'\
-		'yaml'\
-		'folium'\
-		'mpl_toolkits'\
-		'otter-grader'\
-		'geopy'\
-		'requests'\
-		'IPython'\
-		'numpy'\
-		'cycler'\
-		'graphviz'\
-		'python-congress'\
-		'tqdm'\
-		'flask'\
-		'xarray'\
+    'joblib'\
+    'cartopy'\
+    'plotly'\
+    'geopandas'\
+    'seaborn'\
+    'cufflinks'\
+    'yaml'\
+    'folium'\
+    'mpl_toolkits'\
+    'otter-grader'\
+    'geopy'\
+    'requests'\
+    'IPython'\
+    'numpy'\
+    'cycler'\
+    'graphviz'\
+    'python-congress'\
+    'tqdm'\
+    'flask'\
+    'xarray'\
     'xlrd' && \
     mamba clean --all -f -y && \
     fix-permissions "${CONDA_DIR}" && \
