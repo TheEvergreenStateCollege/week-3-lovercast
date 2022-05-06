@@ -1,1 +1,2 @@
-image: jupyter/scipy-notebook:latest
+image: 
+  file: .gitpod.Dockerfile
